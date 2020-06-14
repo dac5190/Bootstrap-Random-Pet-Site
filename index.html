@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Page Title</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--flattly as the starting point-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        /*this is for the main picture, since its such high res*/
+        .fitWidthAndHeigth {
+            width: 100%;
+            height: auto;
+        }
+        .mainLogoBackground{
+            /*something to make the logo stand out*/
+            background-color: white;
+        }
+        .green-background{
+            background-color: green;
+        }
+        .brown-background{
+            background-color: brown;
+        }
+        .whiteLinkText{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--menu portion-->
+    <header class="">
+        <div class="row green-background">
+            <div class="col-8 ">
+                <h2 class="text-center text-white">
+                    Click for New Client Special Offer!
+                </h2>
+            </div>
+            <div class="col-4">
+                <h2>
+                    <a class="whiteLinkText" href="tel:+1 555-555-5555">555-555-5555</a>
+                </h2>
+            </div>
+        </div>
+        <!--sticky top https://getbootstrap.com/docs/4.0/utilities/position/-->
+        <!-- where to grab concept from
+        https://www.professionalpetsittersinc.com/
+            -->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-expand-lg navbar-dark bg-primary">
+
+
+
+            <!---<div class="container">-->
+            <div class="col-3 float-left">
+                <img class="fitWidthAndHeigth mainLogoBackground" src="img/blanks/realistic-dog-coloring-pages-pic - smaller.gif" />
+
+            </div>
+            <div class="col-9">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About Us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <a class="dropdown-item" href="#" onclick="alert('Would lead to About Us'); return false;">About Us</a>
+                                <a class="dropdown-item" href="#" onclick="alert('Would lead to Our Team'); return false;">Our Team</a>
+                                <a class="dropdown-item" href="#" onclick="alert('Would lead to What Sets Use Apart'); return false;">What Sets Us Apart</a>
+                                <a class="dropdown-item" href="#" onclick="alert('Would lead to Join Our Team'); return false;">Join The Team/</a>
+                                <a class="dropdown-item" href="#" onclick="alert('Would lead to Testimonials'); return false;">Testimonials/</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <a class="dropdown-item" href="#" onclick="alert('Would lead to Services and Rates'); return false;">Services And Rates</a>
+                                <a class="dropdown-item" href="#" onclick="alert('Would Lead to Become a Client'); return false;">Become a Client</a>
+                                <a class="dropdown-item" href="#" onclick="alert('Would lead to Request A Quote'); return false;">Request a Quote</a>
+                                <a class="dropdown-item" href="#" onclick="alert('Would lead to Our Service Area'); return false;">Our Service Area</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#" onclick="alert('Would Lead to the FAQ'); return false;">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="alert('Would lead to the blog'); return false;">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="alert('Would lead to contacts page'); return false;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--end menu portion-->
+    <div class="container">
+        <main>
+            <!--this one gets a pciture in the background-->
+            <h1>
+                The Missing Piece to a Pets Home!
+            </h1>
+            <h2>
+                Random mission statement for: &lt;company name&gt; the rest of the mission statement.
+            </h2>
+            <div id="homeCard1ButtonSection">
+                <div class="row">
+                    <div class="col-4">
+                        <!--https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html-->
+                        <!--a more search engine friendly button -->
+                        <form action="/">
+                            <button name="BTNGetStarted" class="btn btn-primary" type="submit">Get Started</button>
+                        </form>
+                    </div>
+                    <div class="col-4">
+                        <button name="BTNUsDifferent" class="btn btn-primary" href="#"  onclick="alert('Would lead to get started'); return false;">What Makes Us Different</button>
+                    </div>
+                    <div class="col-4">
+                        <button name="BTNNewClient" class="btn btn-primary" onclick="alert('Would lead to New Client'); return false;">New Client Special Offer</button>
+                    </div>
+                </div>
+            </div>
+            <div id="homeCard2ServiceSection">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#" onclick="alert('Would lead somewhere.'); return false;">
+                            <img class="rounded-circle fitWidthAndHeigth" src="img/blanks/dogs-and-puppies-coloring-pages.gif" />
+                            <h3>
+                                Dog Walking &amp; Pet Sitting
+                            </h3>
+                        </a>
+                        <p>
+                            We offer convenient and affordable services to fit you and your pets needs
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" onclick="alert('Would lead somewhere else'); return false;">
+                            <img class="rounded-circle fitWidthAndHeigth" src="img/icon Additional Services.png" />
+                            <h3>
+                                Additional Service
+                            </h3>
+                        </a>
+                        <p>
+                            Additional Services statement
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" onclick="alert('Would lead somewhere else'); return false;">
+                            <img class="rounded-circle fitWidthAndHeigth" src="img/icon Happy Clients.png" />
+                            <h3>
+                                Happy Clients
+                            </h3>
+                        </a>
+                        <p>
+                            We take great pride in the service we provide and are thrilled to hear from our satisfied clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="homeCard3">
+                <div class="row">
+                    <div class="col-6 green-background text-white paddingBottom">
+                        <h3 class="pt-2 pb-3">
+                            About Us
+                        </h3>
+                        <p class="pb-4">
+                            Dusty Trail Dog Walking and Pet Sitting is Central New Jersey’s professional pet sitting company, servicing parts of Union and Middlesex Counties. We offer the highest quality pets care to assure families total peace of mind while they’re away.
+                        </p>
+                        <p class="pb-4">
+                            By getting to know you and your pet, we customize our services to meet your needs. Our dedicated staff send you up-to-date reports via text and email to let you know exactly how your pets and home are doing. You never have to wonder what they are up to. We’ll give you the full scoop. We perform visits 7 days a week, 365 days a year. Whether you’re at work, on vacation, or out to dinner Dusty Trail has it covered. Every measure is taken to ensure your confidence in our service, because a pet owner at ease makes for happy pets… and “happy pets” is our business.
+                        </p>
+                        <p>
+                            <a href="#" onclick="alert('this would lead to learn more'); return false;" class="whiteLinkText">Learn More</a>
+                        </p>
+                    </div>
+                    <div class="col-6 ">
+                        <img class="rounded-circle fitWidthAndHeigth" src="img/blanks/dogs-and-puppies-coloring-pages.gif" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="homeCard4">
+                <div class="row">
+                    <div class="col-12">
+                        <hr />
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>The complete service for the busy pet owner.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="rounded-circle fitWidthAndHeigth green-background text-center text-white-50">Online<br/><br/>Booking</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="rounded-circle fitWidthAndHeigth green-background text-center text-white-50">GPS<br />Verified<br/>Walks</div>
+                    </div>
+                    <div class="col-3">
+                        <div class="rounded-circle fitWidthAndHeigth green-background text-center text-white-50"> Available<br />24/7<br />365</div>
+                        <img class="rounded-circle fitWidthAndHeigth" src="img/icon Available 24 7.png" />
+                    </div>
+                    <div class="col-3">
+                        <div class="rounded-circle fitWidthAndHeigth green-background text-center text-white-50">Bonded<br />and<br/>Insured</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <hr />
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="fitWidthAndHeigth" style="  margin-left: 15px;">
+        <div class="row" >
+            <div class="row green-background text-white-50 fitWidthAndHeigth">
+                <div class="col-6">
+                    <h3>
+                        Ready to book your reservation?
+                    </h3>
+                </div>
+                <div class="col-3">
+                    <h3>
+                        <a href="#" onclick="alert('this would lead to get started'); return false;">Get Started</a>
+                    </h3>
+                </div>
+                <div class="col-3">
+                    <h3>
+                        <a href="#" onclick="alert('this would lead to request a quote'); return false;">Request a Quote</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row brown-background">
+            <div class="col-2">
+                <a href="/">Home</a><br/>
+                <a href="#" onclick="alert('Would lead to services'); return false;">Services</a><br />
+                <a href="#" onclick="alert('Would lead to about us'); return false;">AboutUs</a><br />
+                <a href="#" onclick="alert('Would lead to FAQ'); return false;">FAQ</a>
+            </div>
+            <div class="col-2">
+                <a href="#" onclick="alert('Would lead to a blog'); return false;">Blog</a><br />
+                <a href="#" onclick="alert('Would lead to Contact'); return false;">Contact</a><br />
+                <a href="#" onclick="alert('Would lead to new clients'); return false;">New Clients</a>
+            </div>
+            <div class="col-4">
+                Office: <a href="tel:+1 555-555-5555">555-555-5555</a><br/>
+                Email: <a href="#" onclick="alert('this would lead to the info email address from a mailto tag.'); return false;">info</a>
+            </div>
+            <div class="col-2">
+                
+            </div>
+            <div class="col-2">
+                <a href="#" onclick="alert('this would lead to a wordpress (most likely powered)'); return false;">Testimonials</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                Service Areas: Neverland
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
