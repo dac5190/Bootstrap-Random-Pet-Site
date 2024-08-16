@@ -1,2 +1,2 @@
 # Bootstrap Random Pet Site
- A random POC site coded entinerly in simple bootstrap
+ A simple proof-of-concept website built entirely with Bootstrap.
